@@ -1,0 +1,43 @@
+[2026-08-10 17:41:11,331] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(main_prompt_path), length=2479
+[2026-08-10 17:41:11,355] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有1条消息
+[2026-08-10 17:41:11,355] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | 给我生成我的使用报告
+[2026-08-10 17:41:11,357] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(main_prompt_path), length=2479
+[2026-08-10 17:41:13,943] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：get_user_id
+[2026-08-10 17:41:13,944] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{}
+[2026-08-10 17:41:13,945] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：get_current_month
+[2026-08-10 17:41:13,945] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：get_user_id 调用成功
+[2026-08-10 17:41:13,945] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{}
+[2026-08-10 17:41:13,946] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：get_current_month 调用成功
+[2026-08-10 17:41:13,949] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有4条消息
+[2026-08-10 17:41:13,949] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | 2025-09
+[2026-08-10 17:41:13,951] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(main_prompt_path), length=2479
+[2026-08-10 17:41:15,619] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：fill_context_for_report
+[2026-08-10 17:41:15,620] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{}
+[2026-08-10 17:41:15,620] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：fill_context_for_report 调用成功
+[2026-08-10 17:41:15,626] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有6条消息
+[2026-08-10 17:41:15,626] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | fill_context_for_report已调用
+[2026-08-10 17:41:15,628] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(report_prompt_path), length=1140
+[2026-08-10 17:41:17,643] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：fetch_external_data
+[2026-08-10 17:41:17,643] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{'user_id': '1010', 'month': '2025-09'}
+[2026-08-10 17:41:17,645] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：fetch_external_data 调用成功
+[2026-08-10 17:41:17,671] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有8条消息
+[2026-08-10 17:41:17,671] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | {"特征": "130㎡四居 | 三代同堂 | 通体砖", "效率": "覆盖率:82%\\n手动辅助清扫:3次/天\\n定时清扫使用率:60%", "耗材": "电池衰减:18%\\n边刷寿命:剩余30天", "对比": "大户型中操作便捷性回升至低于同类20%"}
+[2026-08-10 17:41:17,672] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(report_prompt_path), length=1140
+[2026-08-10 17:41:20,970] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：rag_summarize
+[2026-08-10 17:41:20,971] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{'query': '扫地机器人电池衰减维护保养'}
+[2026-08-10 17:41:20,971] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：rag_summarize
+[2026-08-10 17:41:20,972] [INFO] INFO - vector_store.py:48 - ✅ VectorStoreService 实例创建完成（未初始化 Milvus Collection）
+[2026-08-10 17:41:20,972] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{'query': '扫地机器人边刷更换维护周期'}
+[2026-08-10 17:41:20,972] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：rag_summarize
+[2026-08-10 17:41:20,973] [INFO] INFO - vector_store.py:59 - 🚀 开始初始化 Milvus VectorStore...
+[2026-08-10 17:41:20,974] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{'query': '大户型扫地机器人清洁覆盖率提升建议'}
+[2026-08-10 17:41:20,995] [INFO] INFO - vector_store.py:80 - ✅ 数据库已存在，跳过创建：milvus_db
+[2026-08-10 17:41:20,998] [INFO] INFO - vector_store.py:91 - ✅ 集合已存在，跳过创建：agent
+[2026-08-10 17:41:21,016] [INFO] INFO - vector_store.py:158 - ✅ Milvus VectorStore 初始化完成 | collection=agent | db=milvus_db
+[2026-08-10 17:41:21,016] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(rag_summarize_prompt_path), length=346
+[2026-08-10 17:41:24,126] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：rag_summarize 调用成功
+[2026-08-10 17:41:24,884] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：rag_summarize 调用成功
+[2026-08-10 17:41:25,006] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：rag_summarize 调用成功
+[2026-08-10 17:41:25,017] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有12条消息
+[2026-08-10 17:41:25,017] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | 建议采用“分区清扫”，分批次清扫不同区域；若机器人续航不足，设置“断点续扫”，完成后自动回充。
+[2026-08-10 17:41:25,018] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(report_prompt_path), length=1140

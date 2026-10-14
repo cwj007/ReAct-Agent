@@ -1,0 +1,31 @@
+[2026-08-10 17:30:54,390] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(main_prompt_path), length=2479
+[2026-08-10 17:31:03,332] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有1条消息
+[2026-08-10 17:31:03,332] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | 扫地机器人在我所在的地区的气温下如何保养
+[2026-08-10 17:31:03,334] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(main_prompt_path), length=2479
+[2026-08-10 17:31:06,324] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：get_user_location
+[2026-08-10 17:31:06,324] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{}
+[2026-08-10 17:31:06,325] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：rag_summarize
+[2026-08-10 17:31:06,326] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{'query': '扫地机器人 气温 温度 环境 保养维护方法'}
+[2026-08-10 17:31:06,329] [INFO] INFO - vector_store.py:48 - ✅ VectorStoreService 实例创建完成（未初始化 Milvus Collection）
+[2026-08-10 17:31:06,355] [INFO] INFO - vector_store.py:59 - 🚀 开始初始化 Milvus VectorStore...
+[2026-08-10 17:31:06,378] [INFO] INFO - vector_store.py:80 - ✅ 数据库已存在，跳过创建：milvus_db
+[2026-08-10 17:31:06,379] [INFO] INFO - vector_store.py:91 - ✅ 集合已存在，跳过创建：agent
+[2026-08-10 17:31:06,402] [INFO] INFO - vector_store.py:158 - ✅ Milvus VectorStore 初始化完成 | collection=agent | db=milvus_db
+[2026-08-10 17:31:06,403] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(rag_summarize_prompt_path), length=346
+[2026-08-10 17:31:07,408] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：get_user_location 调用成功
+[2026-08-10 17:31:10,746] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：rag_summarize 调用成功
+[2026-08-10 17:31:10,970] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有4条消息
+[2026-08-10 17:31:10,971] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | content='在夏季高温环境下，应避免机器人在阳光直射处工作，保持充电环境通风良好，每周检查电池温度，防止过热；在冬季低温环境下，机器人工作前需在室温环境静置30分钟，避免电池续航衰减，充电时保证环境温度不低于5℃。此外，在门槛、台阶等环境使用后，需检查轮组和拖地模组是否卡顿，并手动辅助清理门槛处灰尘；在多尘或风沙大的环境中，应每日清理尘盒、滤网，每周更换边刷，并关闭拖地功能以防灰尘与水渍混合结块。' additional_kwargs={'refusal': None, 'reasoning_content': '我们只需要基于参考资料回答关于扫地机器人在气温、温度、环境方面的保养维护方法。参考资料提到夏季高温、冬季低温、门槛台阶、多尘等。需要概括。纯文本。'} response_metadata={'token_usage': {'completion_tokens': 168, 'prompt_tokens': 765, 'total_tokens': 933, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': None, 'reasoning_tokens': 40, 'rejected_prediction_tokens': None}, 'prompt_tokens_details': {'audio_tokens': None, 'cached_tokens': 0}, 'prompt_cache_hit_tokens': 0, 'prompt_cache_miss_tokens': 765}, 'model_provider': 'deepseek', 'model_name': 'deepseek-v4-flash', 'system_fingerprint': 'fp_a18b46594c_prod0820_fp8_kvcache_20260402', 'id': '3e347ed5-770b-49ca-a6a1-a948aa5743ff', 'finish_reason': 'stop', 'logprobs': None} id='lc_run--019feb02-fb0c-79c0-b4f7-04923a583cb0-0' tool_calls=[] invalid_tool_calls=[] usage_metadata={'input_tokens': 765, 'output_tokens': 168, 'total_tokens': 933, 'input_token_details': {'cache_read': 0}, 'output_token_details': {'reasoning': 40}}
+[2026-08-10 17:31:10,971] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(main_prompt_path), length=2479
+[2026-08-10 17:31:12,673] [INFO] INFO - middleware.py:23 - [tool_monitor] 执行工具：get_weather
+[2026-08-10 17:31:12,674] [INFO] INFO - middleware.py:24 - [tool_monitor] 传入参数：{'city': '泉州'}
+[2026-08-10 17:31:12,820] [INFO] INFO - middleware.py:28 - [tool_monitor] 工具：get_weather 调用成功
+[2026-08-10 17:31:12,833] [INFO] INFO - middleware.py:46 - [log_before_model] 即将调用模型，带有6条消息
+[2026-08-10 17:31:12,834] [DEBUG] DEBUG - middleware.py:48 - [log_before_model] <class 'method-wrapper'> | 城市：泉州市
+天气：阴
+温度：31°C
+风向：西南风
+风力：4级
+湿度：66%
+更新时间：9 分钟前发布
+[2026-08-10 17:31:12,835] [DEBUG] DEBUG - prompt_loader.py:46 - [prompt_loader] 成功加载 prompt(main_prompt_path), length=2479

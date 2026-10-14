@@ -1,0 +1,3 @@
+external_data_path: data/external/records.csv
+weather_api_url: https://uapis.cn/api/v1/misc/weather
+ip_api_url: https://api.ipify.org?format=json

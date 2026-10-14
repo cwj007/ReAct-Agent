@@ -1,0 +1,15 @@
+host: 192.168.10.113
+port: 19530
+milvus_timeout: 10
+collection_name : agent
+db_name : milvus_db
+k :  3
+data_path : data
+md5_hex_store : md5.txt
+allow_knowledge_file_type : ["txt","pdf"]
+embedding_dim: 3072
+
+chunk_size : 200
+chunk_overlap : 20
+separators : ["\n\n","。",".","?","？","!"," ",""]
+

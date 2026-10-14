@@ -1,0 +1,8 @@
+chat_model_name: deepseek-v4-flash
+chat_api_key: 
+chat_base_url: https://api.deepseek.com
+
+embedding_model_name: text-embedding-3-large
+embedding_model_provider: openai
+embedding_api_key: 
+embedding_base_url: https://aihubmix.com/v1
